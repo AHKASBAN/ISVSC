@@ -518,6 +518,7 @@ footer .row3{
  .content {
      padding: 50px;
  }
+
  .content h1 , .content h5{
     text-transform: capitalize;
     color: #EE5D31;
@@ -555,6 +556,26 @@ footer .row3{
     transform: scale(1.2, 1.2)
     
 }
+@media(max-width:771px){
+    .content {
+        padding: 10px 0;
+    }
+    .container {
+        max-width: 100%!important;
+    }
+    .content p{
+       padding:  0 15px;
+    
+    }
+    .imgservice {
+        width: auto;
+    }
+    .content img{
+        margin: 5px;
+       
+    
+    }
+ }
 /***************************************check**********************************/
 .check {
    margin: auto;
