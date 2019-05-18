@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
 	font-family: 'gothic';
 	src: url('../fonts/gothic.eot');
     src: local('../fonts/'), 
@@ -25,8 +25,8 @@
     font-family: 'gothic';
     
 }
-body {
-    overflow-x: hidden!important;
+html{
+    overflow-x: hidden!important
 }
 .arabic * {
 
@@ -74,50 +74,32 @@ body {
     text-decoration: none
  }
 
- .uperbar ul li form input{
-    border: 1px solid #EE5D31;
-    border-radius: 10px;
-    margin-left: 7px;
-    outline: 0;
-    height: 23px;
+ .uperbar ul li form .input-group-prepend  , .uperbar ul li form .form-control{
+   
+    height: 28px;
+   text-transform: capitalize;
+   outline: #EE5D31
   
     
  }
- .uperbar ul li form .fa-search {
-   color: #16006C;
-   position: relative;
-   right: 75%;
- }
- .arabic .uperbar ul li form .fa-search {
-    color: #16006C;
-    position: relative;
-    left: -10%;
-    top:2px
- 
-  }
-  .arabic .uperbar ul li form input{
-   direction: rtl!important
- 
-  }
  @media (max-width:771px){
-    .uperbar ul{
-        display: block;
-        text-align: center
+     .uperbar ul {
+         display: block;
+         text-align: center;
+     }
+     .uperbar ul .input-group{
+        max-width:  70%;
     }
-    .uperbar ul li form .fa-search {
-            right: 13em;
-    }
-    .uperbar ul li:last-child{
-            margin-top: 5px
-    }
-}
+ }
 .changelng {
     color: #16006C;
     text-transform: capitalize;
     font-weight: bold;
+    margin-left: 15px
     
     
 }
+
 /*************************************************navbar*************************************************/
 .navbar {
     align-items: flex-end;
@@ -243,7 +225,8 @@ ul li.dropdown:hover > .dropdown-menu {
     border: transparent solid  1px;
     width: 85%;
     border: #16006C solid  2px;
-    border-radius: 15px
+    border-radius: 15px;
+    height: 150px;
 }
 .icons img:hover {
     border: #EE5D31 solid  2px;
@@ -303,12 +286,12 @@ iframe {
 }
 .news .date{
     color: #EE5D31;
-    font-weight: bold;
+
     
 } 
 .news .readmore a{
     color: #EE5D31;
-    font-weight: bold;
+ 
     text-transform: capitalize;
     
    
@@ -318,9 +301,11 @@ iframe {
     width: 100px;
 }
 .news .item  .title{
-    font-weight: 600;
+    
    height: auto;
    color: #EE5D31;
+   font-weight: 100!important;
+ 
    
 }
 .news .item  {
@@ -339,11 +324,13 @@ iframe {
     text-transform: capitalize;
     
 }
-.news .item  h4 {
+.news .item  h4  {
     color: #EE5D31;
     text-transform: capitalize;
     margin-bottom: 0;
-    line-height: 22px
+    line-height: 22px;
+    font-weight: 100!important;
+    font-size: 20px
     
 }
 .news   h4  a{
@@ -414,55 +401,85 @@ footer .row1 a:last-child {
     border-right: #000 0px solid;
     border-left: rgb(255, 255, 255) 0px solid;
 }
-footer .row2 h2{
+footer .row2 p{
     text-transform: capitalize;
     color: #f2f2f2;
    
-    line-height: 30px;
-    font-weight: bold
-}
-footer .row2 hr{
-   display: none;
-}
-footer .row2 ul{
-  padding: 15px;
-  
-  margin-bottom: 0;
+  text-align: justify;
+  padding-left: 20px;
+  position: relative;
+  left: 20px;
+  line-height: 18px
 
 }
-footer .row2{
-    text-align: left
+.arabic footer .row2 p{
+
+  padding-right: 0;
+ padding-left: 15px;
+ left: 0px;
+ right: 10px;
+
+}
+footer .col-md-5{
+   
+    padding-right: 0
   
   }
- .arabic footer .row2{
-    text-align: right
+ .arabic footer .col-md-5{
+   
+    padding-right: 15px;
+    padding-left:0
   
   }
-footer .row2 span{
-    font-weight: bold
-  
-  }
-  .arabic footer .row2 span{
-    margin-left: 10px;
+  @media (max-width:771px){
+    footer .row2 p{
+       padding: 0;
+      left: 0
     
-  
-  }
-  .arabic footer .row2  ul li span:last-child{
+    }
+    .arabic footer .row2 p{
     
-    direction: ltr!important
-  
+        padding: 0;
+     left: 0px;
+     right: 0;
+    
+    }
+    footer .col-md-5{
+       
+        padding-right: 15px
+      
+      }
+     .arabic footer .col-md-5{
+       
+        padding-right: 15px;
+        padding-left:15px
+      
+      }
   }
+
 
 footer .row3{
    
-    text-align: left
+    text-align: left;
+    padding-left: 60px
   
   }
  .arabic footer .row3{
    
-    text-align: right
+    text-align: right;
+    padding-right: 50px
   
   }
+@media(max-width:771px){
+    footer .row3{
+        padding-left: 15px
+      
+      }
+     .arabic footer .row3{
+        padding-right: 15px
+      
+      }
+}
   footer .row3 input{
    
     display: block;
@@ -491,9 +508,7 @@ footer .row3{
  
   }
   .hr {
-      width: 100px;
-      background-color: #EE5D31;
-      border: #EE5D31 2px solid;
+      display: none
   }
  .copyright {
   
@@ -519,7 +534,7 @@ footer .row3{
      padding: 50px;
  }
 
- .content h1 , .content h5{
+ .content h1 , .content h5 , .blog  h1 {
     text-transform: capitalize;
     color: #EE5D31;
     text-align: center
@@ -548,6 +563,7 @@ footer .row3{
 .imgservice {
     width: 200px;
     border: 0!important;
+    height: 150px;
     
 
 }
@@ -568,7 +584,7 @@ footer .row3{
     
     }
     .imgservice {
-        width: auto;
+        width: 60%;
     }
     .content img{
         margin: 5px;
@@ -605,6 +621,10 @@ footer .row3{
     display: block;
     text-align: left
 }
+.tab-content , .nav-tabs{
+    max-width: 70%;
+    margin: auto;
+}
 .tab-content .tab-pane {
     padding: 30px 0;
 }
@@ -621,7 +641,7 @@ footer .row3{
     border: #EE5D31 1px solid;
     text-align: center;
     text-transform: capitalize;
-    font-weight: 700;
+
     margin: 25px 0;
     cursor: pointer;
 }
@@ -679,7 +699,7 @@ margin-bottom: 15px
  }
 .content form label {
     display: block;
-    font-weight: bold;
+   
     text-transform: capitalize
 }
 .content form input , .content form select , .content form textarea{
@@ -687,7 +707,7 @@ margin-bottom: 15px
    margin-bottom: 15px;
    height: 35px;
    padding: 0 10px;
-   font-weight: bold;
+  
    text-transform: capitalize
 }
  .content form textarea{
@@ -696,7 +716,6 @@ margin-bottom: 15px
    
  }
 .content form select option{
-    font-weight: bold;
     text-transform: capitalize
  }
  @media(max-width:771px){
@@ -738,13 +757,13 @@ input[type="radio"]:checked:after {
    margin-bottom: 15px;
    height: 35px;
    padding: 0 10px;
-   font-weight: bold;
+
    text-transform: capitalize;
    width: 250px;
 }
 .selectservice label{
     display: block;
-    font-weight: bold;
+
     text-transform: capitalize;
     margin-right: 20px
  }
@@ -768,22 +787,7 @@ text-align: center
 .sitemap {
    padding: 50px;
 }
-/*********************************homear************************/
 
-.arabic .fa-search {
-    right: -90%!important;
-
-}
-.uperbar ul li form input{
-   
-    padding: 0 30px 0 10px;
- }
- @media (max-width:771px){
-    .arabic .fa-search {
-        right: -45%!important;
-    
-    }
- }
  /************************datacheck*********************************************/
  .videoguide {
     text-align: left;
@@ -824,7 +828,7 @@ padding-top: 10px;
     background-color:#Fff;
     padding:20px 40px;
     border: 0;
-	margin:auto;
+    margin: auto;
 }
 @media (max-width:771px){
     .formalign {
@@ -858,6 +862,7 @@ padding-top: 10px;
  padding: 40px;
 background-color: #fff;
  max-width: 90%;
+ border: 1px solid #D2D2D2
  
 }
 .contentregister .box:hover i , .contentregister .box:hover span {
@@ -866,13 +871,15 @@ background-color: #fff;
 .contentregister .box a i{
     display: block;
     font-size: 60px;
-    color: #EE5D31
+    color: #16006C;
+    opacity: .75;
 }
 .contentregister .box a span{
     display: block;
     margin-top: 15px;
     text-transform: capitalize;
-    color: #EE5D31
+    color: #16006C;
+    opacity: .75;
 
 }
 .contentregister .box a {
@@ -889,8 +896,8 @@ background-color: #fff;
 .sales  {
     background-image: url('../img/back1.svg');
    
-    background-size: cover;
-   
+    background-size: cover
+    
 }
 .sales form {
 
@@ -913,6 +920,7 @@ background-color: #fff;
 .content table {
     text-transform: capitalize;
     background-color: #fff;
+    border: 1px solid #d2d2d2
     
  }
 
@@ -990,3 +998,74 @@ background-color: #fff;
     .knowlodge form input {
         width: 75%;
  }}
+
+ /******************************login*********************************/
+ .login input[type=checkbox]{
+    width: auto;
+    height: auto;
+ }
+ .login a:hover {
+    text-decoration: underline
+  }
+  /*********************************blog********************/
+  .blog  {
+padding: 35px 0;
+}
+.blog .container {
+    max-width: 90%;
+}
+  .blog img {
+      width: 100%;
+  }
+  .blog  h1{
+    text-align: center;
+    margin-bottom: 40px
+}
+.blog img {
+      width: 100%;
+      margin-bottom: 15px
+}
+.blog h5  ,.blog span {
+    text-transform: capitalize;
+    color: #EE5D31;
+    margin-bottom: 0
+}
+.blog p {
+    text-transform: capitalize;
+  margin-top: 20px
+}
+.blog  .item img {
+    height: 75px;
+}
+.blog  .item p a , .blog  .item span  {
+    color: #EE5D31;
+
+}
+.blog  .item p {
+    margin: 0;
+
+    
+}
+.blog  .item  {
+    padding: 0 0 0 15px;
+    
+}
+.padding-left-50{
+    padding-left: 50px
+}
+@media (max-width:771px){
+    .padding-left-50{
+        padding-left: 15px
+    }
+}
+.padding-right-50{
+    padding-right: 50px
+}
+@media (max-width:771px){
+    .padding-right-50{
+        padding-right: 15px
+    }
+}
+body {
+    background-color: #fff !important;
+}
