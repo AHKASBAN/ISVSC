@@ -9,7 +9,7 @@ $(function(){
     margin:10,
     nav:true,
     dots: false,
-    autoplay : 500,
+    autoplay : 100,
     responsive:{
         0:{
             items:1
@@ -29,15 +29,15 @@ $( ".owl-prev").html('<i class="fa fa-chevron-left  arrow"></i>');
  $('.dropdown-toggle').click(function () {
     window.location = $(this).attr('href');
 
-
+    
    
 });
 
 
 
+$( "footer .row2 p").text("The International Specialized Verification Services Company (ISVSC) is licensed by the competent authorities in the Kingdom of Saudi Arabia and the Gulf States in order to provide verification and electronic services. Its headquarters is at the Diplomatic District, Riyadh, Saudi Arabia");
 
-
-
+$( ".arabic footer .row2 p").text("شركة خدمات التحقق المتخصصة الدولية مرخصة من قبل الجهات المختصة في المملكة العربية السعودية ودول الخليج لتقديم خدمات التحقق والخدمات الإلكترونية ، ويقع مقرها الرئيسي في الحي الدبلوماسي - الرياض- المملكة العربية السعودية.")
 
 
 });
