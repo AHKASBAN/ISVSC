@@ -924,6 +924,9 @@ text-align: center
         width: 100%;
        
      }
+     .content p{
+         padding: 0 15px;
+     }
  }
 
 
