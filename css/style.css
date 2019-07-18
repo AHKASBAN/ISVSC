@@ -261,6 +261,7 @@ ul li.dropdown:hover > .dropdown-menu {
     width: 85%;
     height: 150px;
 }
+
 .icons img:hover {
     transform: scale(1.1,1.1)
    
@@ -296,8 +297,13 @@ iframe {
     .icons img {
         margin: 15px 0;
         width: 200px;
+        height: auto;
+    }
+    .icons .row div:nth-of-type(3) img {
+     
         height: 150px;
     }
+
 }
 
 /************************************client***************************/
@@ -639,9 +645,23 @@ footer .row3{
     
 
 }
+
 @media(max-width:771px){
     .imgservice , .imgservice2{
         width: 200px;
+        height: auto !important;
+        margin: 10px auto !important;
+    }
+    .content .row div:nth-of-type(3) img{
+        height: 150px !important
+    }
+    .content  .row .text-center a h5  {
+        padding: 0 !important;
+    
+    }
+    .content  .row > div{
+       margin: 15px 0;
+    
     }
     .content .row h5 {
         padding-left: 15px
@@ -681,11 +701,6 @@ footer .row3{
         max-width: 100%!important;
     }
    
-    .imgservice {
-        width: 200px;
-       
-       
-    }
     .content img{
         margin: 5px;
        
