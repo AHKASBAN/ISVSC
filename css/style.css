@@ -604,7 +604,7 @@ footer .row3{
      color:  #808080;
  }
  .content h1{
-    margin-bottom: 15px
+    margin-bottom: 30px
 }
  .content h1 , .content h5 , .blog  h1 {
     text-transform: capitalize;
@@ -642,9 +642,13 @@ footer .row3{
 @media(max-width:771px){
     .imgservice , .imgservice2{
         width: 200px;
-       
-        
-    
+    }
+    .content .row h5 {
+        padding-left: 15px
+    }
+    .arabic .content .row h5 {
+        padding-left: 0;
+        padding-right: 15px
     }
 }
 .service-box {
@@ -676,10 +680,7 @@ footer .row3{
     .container {
         max-width: 100%!important;
     }
-    .content p{
-       padding:  0 15px;
-    
-    }
+   
     .imgservice {
         width: 200px;
        
@@ -876,8 +877,10 @@ input[type="radio"]:checked:after {
    
     width: 150px;
     text-transform: capitalize;
+    text-align: start
     
  }
+
 .sitemap a{
     display: block;
     color: #000;
@@ -909,6 +912,18 @@ text-align: center
     margin-top: 0;
     width: 100%;
    
+ }
+ @media(max-width:771px){
+    .videoguide {
+        margin: auto;
+        padding-top: 30px;
+        width: 90%;
+     }
+     .videoguide iframe{
+        margin-top: 0;
+        width: 100%;
+       
+     }
  }
 
 
